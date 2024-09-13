@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCell" id="gTV-IL-0wX" customClass="ItemCollectionViewCell" customModule="DailyFit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="253" height="265"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="253" height="265"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XzP-F9-m0O">
+                        <rect key="frame" x="0.0" y="0.0" width="253" height="265"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmZ-PL-qlU">
+                                <rect key="frame" x="98.666666666666671" y="115" width="56.000000000000014" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="play"/>
+                                <connections>
+                                    <action selector="playButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="wtQ-tr-9Hd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dmZ-PL-qlU" firstAttribute="centerX" secondItem="XzP-F9-m0O" secondAttribute="centerX" id="eNA-W7-HvT"/>
+                            <constraint firstItem="dmZ-PL-qlU" firstAttribute="centerY" secondItem="XzP-F9-m0O" secondAttribute="centerY" id="hPt-0p-JpK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="XzP-F9-m0O" secondAttribute="trailing" id="AUn-mD-HEf"/>
+                <constraint firstItem="XzP-F9-m0O" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Cft-C4-fPl"/>
+                <constraint firstAttribute="bottom" secondItem="XzP-F9-m0O" secondAttribute="bottom" id="dP3-Y6-Fr8"/>
+                <constraint firstItem="XzP-F9-m0O" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jjq-B7-Nsf"/>
+            </constraints>
+            <size key="customSize" width="253" height="265"/>
+            <connections>
+                <outlet property="containerView" destination="XzP-F9-m0O" id="P2T-VJ-Asq"/>
+                <outlet property="playButton" destination="dmZ-PL-qlU" id="zG2-xO-OnE"/>
+            </connections>
+            <point key="canvasLocation" x="197.70992366412213" y="64.436619718309856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
